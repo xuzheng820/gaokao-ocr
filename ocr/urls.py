@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url
+from . import view
+from baiduOCR import views
 
 urlpatterns = [
+    url(r'hello', view.hello),
+    url(r'upload/$', views.upload_file, name='upload_file'),
     path('admin/', admin.site.urls),
 ]
