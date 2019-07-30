@@ -1,0 +1,4 @@
+
+*.pyc
+baiduOCR/__init__.py
+baiduOCR/migrations/__init__.py
